@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Persons>
+  <Person ID="1">
+    <Firstname>Dimitris-Ilias</Firstname>
+    <Lastname>Gkanatsios</Lastname>
+    <Age Adult="true">24</Age>
+    <Salary Type="PartTime">700</Salary>
+    </Person>
+  <Person ID="2">
+    <Firstname>Giannis</Firstname>
+    <Lastname>Papadopoulos</Lastname>
+    <Age Adult="true">45</Age>
+    <Salary Type="FullTime">1700</Salary>
+  </Person>
+  <Person ID="3">
+    <Firstname>Gianna</Firstname>
+    <Lastname>Ioannou</Lastname>
+    <Age Adult="false">15</Age>
+    <Salary Type="PartTime" />
+  </Person>
+
+</Persons>

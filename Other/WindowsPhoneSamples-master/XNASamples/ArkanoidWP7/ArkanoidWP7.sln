@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkanoidWP7", "ArkanoidWP7\ArkanoidWP7\ArkanoidWP7.csproj", "{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "ArkanoidWP7Content", "ArkanoidWP7\ArkanoidWP7Content\ArkanoidWP7Content.contentproj", "{5BCC1DD7-22EC-470D-A667-54BD450A0BA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Any CPU = Release|Any CPU
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{C138ECC0-7751-4A68-BB1B-9B84FB1618AD}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{5BCC1DD7-22EC-470D-A667-54BD450A0BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCC1DD7-22EC-470D-A667-54BD450A0BA9}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{5BCC1DD7-22EC-470D-A667-54BD450A0BA9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCC1DD7-22EC-470D-A667-54BD450A0BA9}.Release|Windows Phone.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

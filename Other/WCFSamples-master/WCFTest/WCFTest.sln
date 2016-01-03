@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest", "WCFTest\WCFTest.csproj", "{5C4052C6-A1BA-4631-8E8E-83B8F28E6B7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTestClient", "WCFTestClient\WCFTestClient.csproj", "{C74C0625-665B-423F-A605-F0BA42CDF07C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C4052C6-A1BA-4631-8E8E-83B8F28E6B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4052C6-A1BA-4631-8E8E-83B8F28E6B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4052C6-A1BA-4631-8E8E-83B8F28E6B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4052C6-A1BA-4631-8E8E-83B8F28E6B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C74C0625-665B-423F-A605-F0BA42CDF07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C74C0625-665B-423F-A605-F0BA42CDF07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C74C0625-665B-423F-A605-F0BA42CDF07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C74C0625-665B-423F-A605-F0BA42CDF07C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

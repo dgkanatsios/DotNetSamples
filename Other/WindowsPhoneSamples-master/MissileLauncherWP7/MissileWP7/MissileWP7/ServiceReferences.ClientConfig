@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IMissileService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:31337/MissileService" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IMissileService" contract="MissileServiceReference.IMissileService"
+                name="BasicHttpBinding_IMissileService" />
+        </client>
+    </system.serviceModel>
+</configuration>

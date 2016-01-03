@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="AsyncDemo.BlankPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AsyncDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid Background="Black">
+        <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="117,84,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="702"/>
+        <ProgressRing x:Name="progress" HorizontalAlignment="Left" Margin="500,97,0,0" VerticalAlignment="Top" Height="264" Width="246"/>
+        <StackPanel Margin="0,0,1144,708" Orientation="Horizontal">
+            <Button Content="Start!" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btn_Start"/>
+            <Button Content="Click me!" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        </StackPanel>
+    </Grid>
+</Page>

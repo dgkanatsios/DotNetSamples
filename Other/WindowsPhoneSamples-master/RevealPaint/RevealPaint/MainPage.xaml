@@ -1,0 +1,26 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="RevealPaint.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Canvas x:Name="LayoutRoot" Background="Transparent" Height="800">
+        <Image Canvas.Top="0" Canvas.Left="0" Source="a-b.png" Stretch="Fill"/>
+        
+
+        <!--ContentPanel - place additional content here-->
+    </Canvas>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+
+</phone:PhoneApplicationPage>

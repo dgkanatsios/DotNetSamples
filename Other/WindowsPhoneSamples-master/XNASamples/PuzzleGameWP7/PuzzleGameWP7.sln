@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuzzleGameWP7", "PuzzleGameWP7\PuzzleGameWP7\PuzzleGameWP7.csproj", "{A2EFC114-D2E0-4FCC-802B-1B4635C25319}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "PuzzleGameWP7Content", "PuzzleGameWP7\PuzzleGameWP7Content\PuzzleGameWP7Content.contentproj", "{F0B5F9B8-7F5D-4ABD-A60C-930324317DA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Any CPU = Release|Any CPU
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2EFC114-D2E0-4FCC-802B-1B4635C25319}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{A2EFC114-D2E0-4FCC-802B-1B4635C25319}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{A2EFC114-D2E0-4FCC-802B-1B4635C25319}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{A2EFC114-D2E0-4FCC-802B-1B4635C25319}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{A2EFC114-D2E0-4FCC-802B-1B4635C25319}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{A2EFC114-D2E0-4FCC-802B-1B4635C25319}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{A2EFC114-D2E0-4FCC-802B-1B4635C25319}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{A2EFC114-D2E0-4FCC-802B-1B4635C25319}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{F0B5F9B8-7F5D-4ABD-A60C-930324317DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B5F9B8-7F5D-4ABD-A60C-930324317DA1}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{F0B5F9B8-7F5D-4ABD-A60C-930324317DA1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B5F9B8-7F5D-4ABD-A60C-930324317DA1}.Release|Windows Phone.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1cf7c85d-a375-4579-a6d1-ff636a626eff" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2230/NorthwindService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NorthwindService.xsd" MetadataType="Schema" ID="a391e147-5b68-41ff-ab50-7ac5081acb51" SourceId="1" SourceUrl="http://localhost:2230/NorthwindService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NorthwindService1.xsd" MetadataType="Schema" ID="83c9d0d1-4245-44d6-b546-7280b7775182" SourceId="1" SourceUrl="http://localhost:2230/NorthwindService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NorthwindService.disco" MetadataType="Disco" ID="0376c284-3175-466c-9bb0-eeebe0b54785" SourceId="1" SourceUrl="http://localhost:2230/NorthwindService.svc?disco" />
+    <MetadataFile FileName="NorthwindService2.xsd" MetadataType="Schema" ID="d9e1552a-d251-4877-a87e-9b205504446e" SourceId="1" SourceUrl="http://localhost:2230/NorthwindService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NorthwindService.wsdl" MetadataType="Wsdl" ID="1b188b18-878b-4c46-8c65-858c448c1848" SourceId="1" SourceUrl="http://localhost:2230/NorthwindService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

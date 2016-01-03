@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MissileService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:31337/MissileService?xsd=xsd0" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMissileService_Left_InputMessage">
+    <wsdl:part name="parameters" element="tns:Left" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Left_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LeftResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Right_InputMessage">
+    <wsdl:part name="parameters" element="tns:Right" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Right_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RightResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Up_InputMessage">
+    <wsdl:part name="parameters" element="tns:Up" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Up_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Down_InputMessage">
+    <wsdl:part name="parameters" element="tns:Down" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Down_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Fire_InputMessage">
+    <wsdl:part name="parameters" element="tns:Fire" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Fire_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FireResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Stop_InputMessage">
+    <wsdl:part name="parameters" element="tns:Stop" />
+  </wsdl:message>
+  <wsdl:message name="IMissileService_Stop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StopResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMissileService">
+    <wsdl:operation name="Left">
+      <wsdl:input wsam:Action="http://tempuri.org/IMissileService/Left" message="tns:IMissileService_Left_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IMissileService/LeftResponse" message="tns:IMissileService_Left_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Right">
+      <wsdl:input wsam:Action="http://tempuri.org/IMissileService/Right" message="tns:IMissileService_Right_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IMissileService/RightResponse" message="tns:IMissileService_Right_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Up">
+      <wsdl:input wsam:Action="http://tempuri.org/IMissileService/Up" message="tns:IMissileService_Up_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IMissileService/UpResponse" message="tns:IMissileService_Up_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Down">
+      <wsdl:input wsam:Action="http://tempuri.org/IMissileService/Down" message="tns:IMissileService_Down_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IMissileService/DownResponse" message="tns:IMissileService_Down_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Fire">
+      <wsdl:input wsam:Action="http://tempuri.org/IMissileService/Fire" message="tns:IMissileService_Fire_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IMissileService/FireResponse" message="tns:IMissileService_Fire_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Stop">
+      <wsdl:input wsam:Action="http://tempuri.org/IMissileService/Stop" message="tns:IMissileService_Stop_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IMissileService/StopResponse" message="tns:IMissileService_Stop_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMissileService" type="tns:IMissileService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Left">
+      <soap:operation soapAction="http://tempuri.org/IMissileService/Left" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Right">
+      <soap:operation soapAction="http://tempuri.org/IMissileService/Right" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Up">
+      <soap:operation soapAction="http://tempuri.org/IMissileService/Up" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Down">
+      <soap:operation soapAction="http://tempuri.org/IMissileService/Down" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fire">
+      <soap:operation soapAction="http://tempuri.org/IMissileService/Fire" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Stop">
+      <soap:operation soapAction="http://tempuri.org/IMissileService/Stop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MissileService">
+    <wsdl:port name="BasicHttpBinding_IMissileService" binding="tns:BasicHttpBinding_IMissileService">
+      <soap:address location="http://localhost:31337/MissileService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

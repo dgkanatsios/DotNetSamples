@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="FirstWordsKinect.MainScreenView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FirstWordsKinect"
+             xmlns:viewers="clr-namespace:Microsoft.Samples.Kinect.WpfViewers;assembly=Microsoft.Samples.Kinect.WpfViewers"
+             xmlns:toolkit="clr-namespace:Coding4Fun.Kinect.Wpf.Controls;assembly=Coding4Fun.Kinect.Wpf"
+             mc:Ignorable="d" Width="950" Height="750">
+	<UserControl.Resources>
+		<Style x:Key="ButtonStyle1" TargetType="{x:Type toolkit:HoverButton}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type toolkit:HoverButton}">
+						<Grid>
+							<Image Source="images/animals/ant@2x.png" Stretch="Fill"/>
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsFocused" Value="True"/>
+							
+							<Trigger Property="IsMouseOver" Value="True"/>
+							
+							<Trigger Property="IsEnabled" Value="False"/>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Storyboard x:Key="Storyboard1" AutoReverse="True">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="hoverButton">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="246"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="458"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="672"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="hoverButton">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="9"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="6"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="hoverButton">
+				<EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:1" Value="-177.502"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:2" Value="-358.628"/>
+				<EasingDoubleKeyFrame KeyTime="0:0:3" Value="-539.766"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		
+	</UserControl.Resources>
+	
+    <Canvas Name="gameCanvas">
+        <Canvas.Background>
+            <ImageBrush ImageSource="images/backgrounds/garden-1.png" />
+        </Canvas.Background>
+        <Ellipse x:Name="cursor" Width="64" Height="64" Canvas.Left="0" Canvas.Top="0">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/FirstWordsKinect;component/resources/cursor-draw.png" Stretch="Fill"></ImageBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <toolkit:HoverButton IsTriggeredOnHover="True" Canvas.ZIndex="500"  x:Name="hoverButton" Click="antButton_Click" Content="" Height="296" Canvas.Left="12" Style="{DynamicResource ButtonStyle1}" Canvas.Top="434" Width="250.605" RenderTransformOrigin="0.5,0.5">
+        	<toolkit:HoverButton.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</toolkit:HoverButton.RenderTransform>
+        </toolkit:HoverButton>
+        <StackPanel Canvas.Left="102" Canvas.Top="43" Orientation="Horizontal" Name="lettersStackPanel">
+
+        </StackPanel>
+        <viewers:KinectSkeletonViewer Width="100" Height="100" Canvas.Left="850" Canvas.Top="0" Name="kinectSkeletonViewer" Background="White" />
+        <viewers:KinectDepthViewer Width="100" Height="100" Canvas.Left="744" Canvas.Top="0" Name="kinectDepthViewer" />
+        <viewers:KinectColorViewer Width="100" Height="100" Canvas.Left="638" Canvas.Top="0" Name="kinectColorViewer" />
+        
+    </Canvas>
+</UserControl>

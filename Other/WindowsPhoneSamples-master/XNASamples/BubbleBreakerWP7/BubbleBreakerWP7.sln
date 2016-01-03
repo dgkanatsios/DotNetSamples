@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleBreakerWP7", "BubbleBreakerWP7\BubbleBreakerWP7\BubbleBreakerWP7.csproj", "{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "BubbleBreakerWP7Content", "BubbleBreakerWP7\BubbleBreakerWP7Content\BubbleBreakerWP7Content.contentproj", "{718E3D65-5142-4A52-9AB7-9B580BF93625}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Any CPU = Release|Any CPU
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}.Debug|Any CPU.ActiveCfg = Debug|Windows Phone
+		{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}.Release|Any CPU.ActiveCfg = Release|Windows Phone
+		{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{C363ACB7-7D87-4D0C-95B2-7F99AB5082BD}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{718E3D65-5142-4A52-9AB7-9B580BF93625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718E3D65-5142-4A52-9AB7-9B580BF93625}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{718E3D65-5142-4A52-9AB7-9B580BF93625}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{718E3D65-5142-4A52-9AB7-9B580BF93625}.Release|Windows Phone.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

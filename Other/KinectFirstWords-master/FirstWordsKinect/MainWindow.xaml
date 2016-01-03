@@ -1,0 +1,9 @@
+﻿<Window x:Class="FirstWordsKinect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:FirstWordsKinect"
+        Title="MainWindow" Height="750" Width="950">
+    <Grid x:Name="LayoutRoot">
+        <local:MainScreenView />
+    </Grid>
+</Window>

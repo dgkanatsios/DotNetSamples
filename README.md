@@ -3,8 +3,6 @@ DotNetSamples
 
 A collection of very very very basic .NET and C# samples. You can browse and see various usage of 
 
-Yesterday I uploaded on GitHub a lot of .NET and C# samples I have created over the years, as part of my presentations and trainings. You can find them here and download them. Feel free to reuse the code! All the samples are comprises of  very little code that does a specific thing. Some of the samples are pretty old and have been superceded by new language/framework advancements (e.g. Linq To XML vs XmlReader) but I’ve decided to keep them in case they prove useful to someone. Small description follows for each sample
-
 C# Arguments – demonstrates usage of arguments in C# methods
 
 Chat with TCP – a chat server and client using the TCP protocol
@@ -85,7 +83,7 @@ Various Windows Phone Samples. Includes
 
 - RSSReader. Source code for an RSS in Windows Phone 7. Check the blog post here http://dgkanatsios.com/2011/02/11/tutorial-video-creating-an-rss-reader-for-windows-phone-7-in-5-minutes-3/ and the YouTube tutorial here https://www.youtube.com/watch?v=E5rcY0b2ZfQ&feature=player_embedded
 
-Some Windows 8 User Experience (UX) patterns I've worked on. They were presented at EuroPLoP 2013, the premier European conference on patterns and pattern languages. You can check the paper here. I do not maintain the specific solution, check my Universal Helpers project for XAML behaviors and helpful UI stuff for Universal Windows Platform here: http://dgkanatsios.com/2015/12/11/universal-helpers-library-for-the-universal-windows-platform/
+Some Windows 8 User Experience (UX) patterns I've worked on. They were presented at EuroPLoP 2013, the premier European conference on patterns and pattern languages. I do not maintain the specific solution, check my Universal Helpers project for XAML behaviors and helpful UI stuff for Universal Windows Platform here: http://dgkanatsios.com/2015/12/11/universal-helpers-library-for-the-universal-windows-platform/
 
 CSAsyncWin8: A small demo of the new async keyword in C#. Demo was presented at the first ever Windows 8 development event in Greece, in 2012. Try playing with it by commenting/uncommenting designated lines of code at btn_Start method in BlankPage.xaml.cs to see the results!
 
